@@ -11,6 +11,7 @@
   <Project>https://github.com/get-convex/convex-backend</Project>
   <Overview>Convex self-hosted backend server. Provides the Convex API on port 3210 and HTTP actions on port 3211. Requires a PostgreSQL database — install one from Community Apps if you don't have one already. You must create the database manually before starting this container (see INSTANCE_NAME for the derived database name). After first start, generate your admin key by running in the Unraid terminal: docker exec convex-backend ./generate_admin_key.sh</Overview>
   <Category>Productivity: Tools:</Category>
+  <TemplateURL>https://raw.githubusercontent.com/Moyettes/moyserver/refs/heads/main/convex/convex-backend.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/get-convex/convex-backend/refs/heads/main/npm-packages/dashboard/public/convex-logo-only.svg</Icon>
   <ExtraParams>--restart unless-stopped --stop-signal SIGINT --stop-timeout 10 --health-cmd "curl -f http://localhost:3210/version" --health-interval 5s --health-start-period 10s</ExtraParams>
   <PostArgs/>
