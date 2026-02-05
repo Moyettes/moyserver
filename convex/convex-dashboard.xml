@@ -12,6 +12,7 @@
   <Overview>Convex self-hosted dashboard. Web UI for managing your Convex deployment. Accessible on port 6791. Requires the Convex Backend container to be running and healthy.</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:6791]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Moyettes/moyserver/refs/heads/main/convex/convex-dashboard.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/get-convex/convex-backend/refs/heads/main/npm-packages/dashboard/public/convex-logo-only.svg</Icon>
   <ExtraParams>--restart unless-stopped --stop-signal SIGINT --stop-timeout 10</ExtraParams>
   <PostArgs/>
